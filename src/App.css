@@ -1,0 +1,172 @@
+/* App.css */
+
+/* Variables globales */
+:root {
+  --primary-color: #26547c;
+  --secondary-color: #ef476f;
+  --accent-color: #ffd166;
+  --bg-color: #f8f9fa;
+  --text-color: #333;
+  --font-family: 'Roboto', sans-serif;
+  --spacing: 1rem;
+  --border-radius: 0.5rem;
+}
+
+/* Styles globaux */
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing);
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.checklist-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checklist-card h3 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.checklist-card .status {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.checklist-card .actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: var(--spacing);
+}
+
+.new-checklist-btn {
+  align-self: flex-start;
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing);
+}
+
+/* Checklist Styles */
+.checklist-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.checklist-header {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: var(--spacing);
+  border-radius: var(--border-radius);
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: var(--spacing);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-item button {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Form Styles */
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  padding: var(--spacing);
+}
+
+.form-group {
+  margin-bottom: var(--spacing);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+}
+
+.task-list {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item button {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.save-btn {
+  display: block;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+}

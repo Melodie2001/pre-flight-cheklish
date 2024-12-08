@@ -1,0 +1,41 @@
+/* index.css - Styles globaux */
+:root {
+  --primary-color: #26547c;
+  --secondary-color: #ef476f;
+  --accent-color: #ffd166;
+  --bg-color: #f8f9fa;
+  --text-color: #333;
+  --font-family: 'Roboto', sans-serif;
+  --spacing: 1rem;
+  --border-radius: 0.5rem;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing);
+}
